@@ -1,7 +1,7 @@
 # reto_6
-python
 
-```
+
+```python
 billete: int
 
 def panes_totales(p: int) -> int:
@@ -39,5 +39,5 @@ if __name__ == "__main__":
     elif billete != [2000, 5000, 10000, 20000, 50000, 100000]:
          print("No ingreso un billete valido")
     else:
-        print("No es un billete real.")
-    ```    
+        print("No es un billete real.") ```
+       
