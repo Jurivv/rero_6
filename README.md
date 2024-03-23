@@ -39,5 +39,21 @@ if __name__ == "__main__":
     elif billete != [2000, 5000, 10000, 20000, 50000, 100000]:
          print("No ingreso un billete valido")
     else:
-        print("No es un billete real.") ```
-       
+        print("No es un billete real.")
+```
+```python
+c: int
+ti: float  # tasa de interes (en porcentaje)
+t: int  # tiempo
+def interes(c: int, ti: float) -> float:
+    return c * (ti / 100)  # Convertimos la tasa de interés a porcentaje
+
+def valor_final(c: int, ti: float, t: int) -> float:
+    return c * (1 + interes(c, ti)) ** t
+
+if __name__ == "__main__":
+    c = int(input("Ingrese el capital del préstamo: "))
+    ti = float(input("Ingrese la tasa de interés  sin el signo %): "))
+    t = int(input("Ingrese el tiempo en meses: "))
+    print("Este es el interés compuesto:", valor_final(c, ti, t))
+```
